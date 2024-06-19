@@ -11,7 +11,8 @@ import SwiftUI
 
 class SwiftUIController: UIViewController {
   override func viewDidLoad() {
-    let swiftUIView = SwiftUIView()
+    let weatherSummaryViewModel = WeatherSummaryViewModel()
+    let swiftUIView = SwiftUIView(viewModel: weatherSummaryViewModel)
     let hosting = UIHostingController(rootView: swiftUIView)
     addChild(hosting)
     view.addSubview(hosting.view)
