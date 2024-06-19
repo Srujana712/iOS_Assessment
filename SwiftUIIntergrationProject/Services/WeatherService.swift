@@ -16,10 +16,45 @@ import MapKit
    */
 struct WeatherService {
   /// Example function signatures. Takes in location and returns publishers that contain
-//  var retrieveWeatherForecast: (CLLocation) -> DataPublisher<ForecastJSONData?>
-//  var retrieveCurrentWeather: (CLLocation) -> DataPublisher<CurrentWeatherJSONData?>
+  var retrieveWeatherForecast: (CLLocation) -> DataPublisher<ForecastJSONData?>
+  var retrieveCurrentWeather: (CLLocation) -> DataPublisher<CurrentWeatherJSONData?>
 }
 
+// Mofidifed and extended by Srujana
 extension WeatherService {
-  static var live = WeatherService()
+  static var live = WeatherService(
+    retrieveWeatherForecast: { location in
+      guard let url = forecastURL(location: location) else {
+        return Fail(error: SimpleError.dataLoad("Invalid URL for weather forecast")).eraseToAnyPublisher()
+      }
+
+      return URLSession.shared.dataTaskPublisher(for: url)
+        .tryCompactMap({ element in
+          guard let httpResponse = element.response as? HTTPURLResponse,
+                httpResponse.statusCode == 200 else {
+            throw SimpleError.dataLoad(URLError(.badServerResponse).localizedDescription)
+          }
+          return try JSONDecoder().decode(ForecastJSONData.self, from: element.data)
+        })
+        .mapError({ SimpleError.dataParse($0.localizedDescription) })
+        .eraseToAnyPublisher()
+    },
+
+    retrieveCurrentWeather: { location in
+      guard let url = currentWeatherURL(location: location) else {
+        return Fail(error: SimpleError.dataLoad("Invalid URL for current weather")).eraseToAnyPublisher()
+      }
+
+      return URLSession.shared.dataTaskPublisher(for: url)
+        .tryCompactMap({ element in
+          guard let httpResponse = element.response as? HTTPURLResponse,
+                httpResponse.statusCode == 200 else {
+            throw SimpleError.dataLoad(URLError(.badServerResponse).localizedDescription)
+          }
+          return try JSONDecoder().decode(CurrentWeatherJSONData.self, from: element.data)
+        })
+        .mapError({ SimpleError.dataParse($0.localizedDescription) })
+        .eraseToAnyPublisher()
+    }
+  )
 }

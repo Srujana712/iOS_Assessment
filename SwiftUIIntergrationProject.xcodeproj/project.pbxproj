@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1A0B20A52C200CEE0084692D /* CardViewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0B20A42C200CEE0084692D /* CardViewModifier.swift */; };
+		1A0B20A72C20161D0084692D /* ForecastCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0B20A62C20161D0084692D /* ForecastCardView.swift */; };
+		1A0B20A92C2016420084692D /* ForecastCardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0B20A82C2016420084692D /* ForecastCardViewModel.swift */; };
+		1A9682D92C1EB4A200BF2A64 /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A9682D82C1EB4A200BF2A64 /* SearchBar.swift */; };
+		1A9682DC2C1EC23E00BF2A64 /* WeatherSummaryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A9682DB2C1EC23E00BF2A64 /* WeatherSummaryViewModel.swift */; };
+		1ADF866F2C20E1A700F6766C /* DismissKeyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ADF866E2C20E1A700F6766C /* DismissKeyboard.swift */; };
+		1ADF86712C20EEA000F6766C /* SwiftUIWeatherServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ADF86702C20EEA000F6766C /* SwiftUIWeatherServiceTests.swift */; };
+		1AFA64F62C21FAD300E76352 /* SwiftUIWeatherSummaryViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AFA64F52C21FAD300E76352 /* SwiftUIWeatherSummaryViewModelTests.swift */; };
+		1AFA64F82C22080300E76352 /* SwiftUIForecastCardViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AFA64F72C22080300E76352 /* SwiftUIForecastCardViewModelTests.swift */; };
 		9B0033422BFED3CF0057F235 /* SimpleError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B0033412BFED3CF0057F235 /* SimpleError.swift */; };
 		9B1FE3652BC0A09200F0A259 /* SampleAddresses.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B1FE3642BC0A09200F0A259 /* SampleAddresses.swift */; };
 		9B1FE3672BC0A0FD00F0A259 /* AddressService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B1FE3662BC0A0FD00F0A259 /* AddressService.swift */; };
@@ -70,6 +79,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1A0B20A42C200CEE0084692D /* CardViewModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardViewModifier.swift; sourceTree = "<group>"; };
+		1A0B20A62C20161D0084692D /* ForecastCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastCardView.swift; sourceTree = "<group>"; };
+		1A0B20A82C2016420084692D /* ForecastCardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastCardViewModel.swift; sourceTree = "<group>"; };
+		1A9682D82C1EB4A200BF2A64 /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
+		1A9682DB2C1EC23E00BF2A64 /* WeatherSummaryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherSummaryViewModel.swift; sourceTree = "<group>"; };
+		1ADF866E2C20E1A700F6766C /* DismissKeyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DismissKeyboard.swift; sourceTree = "<group>"; };
+		1ADF86702C20EEA000F6766C /* SwiftUIWeatherServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIWeatherServiceTests.swift; sourceTree = "<group>"; };
+		1AFA64F52C21FAD300E76352 /* SwiftUIWeatherSummaryViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIWeatherSummaryViewModelTests.swift; sourceTree = "<group>"; };
+		1AFA64F72C22080300E76352 /* SwiftUIForecastCardViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIForecastCardViewModelTests.swift; sourceTree = "<group>"; };
 		9B0033412BFED3CF0057F235 /* SimpleError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleError.swift; sourceTree = "<group>"; };
 		9B1FE3642BC0A09200F0A259 /* SampleAddresses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleAddresses.swift; sourceTree = "<group>"; };
 		9B1FE3662BC0A0FD00F0A259 /* AddressService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressService.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
@@ -144,6 +162,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1A0B20A22C2008700084692D /* SwiftUICardViews */ = {
+			isa = PBXGroup;
+			children = (
+				1A0B20A42C200CEE0084692D /* CardViewModifier.swift */,
+				1A0B20A62C20161D0084692D /* ForecastCardView.swift */,
+				1A0B20A82C2016420084692D /* ForecastCardViewModel.swift */,
+			);
+			path = SwiftUICardViews;
+			sourceTree = "<group>";
+		};
+		1A0B20A32C2008880084692D /* SwiftUISearchBarView */ = {
+			isa = PBXGroup;
+			children = (
+				1A9682D82C1EB4A200BF2A64 /* SearchBar.swift */,
+			);
+			path = SwiftUISearchBarView;
+			sourceTree = "<group>";
+		};
+		1A9682DA2C1EC1EE00BF2A64 /* SwiftUIViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				1A9682DB2C1EC23E00BF2A64 /* WeatherSummaryViewModel.swift */,
+			);
+			path = SwiftUIViewModel;
+			sourceTree = "<group>";
+		};
 		9B0033402BFED3C60057F235 /* Errors */ = {
 			isa = PBXGroup;
 			children = (
@@ -166,6 +210,7 @@
 			isa = PBXGroup;
 			children = (
 				9B98F4732BCEDB57008B5876 /* HostControllerDelegate.swift */,
+				1ADF866E2C20E1A700F6766C /* DismissKeyboard.swift */,
 			);
 			path = UIKitExtensions;
 			sourceTree = "<group>";
@@ -173,6 +218,9 @@
 		9B1FE3842BC507B000F0A259 /* SwiftUIView */ = {
 			isa = PBXGroup;
 			children = (
+				1A0B20A32C2008880084692D /* SwiftUISearchBarView */,
+				1A0B20A22C2008700084692D /* SwiftUICardViews */,
+				1A9682DA2C1EC1EE00BF2A64 /* SwiftUIViewModel */,
 				9B1FE3852BC507C400F0A259 /* SwiftUIView.swift */,
 				9B1FE38D2BC5D63200F0A259 /* SwiftUIController.swift */,
 			);
@@ -265,6 +313,9 @@
 			isa = PBXGroup;
 			children = (
 				9BBD8D0C2BBC561000A5F295 /* SwiftUIIntergrationProjectTests.swift */,
+				1ADF86702C20EEA000F6766C /* SwiftUIWeatherServiceTests.swift */,
+				1AFA64F52C21FAD300E76352 /* SwiftUIWeatherSummaryViewModelTests.swift */,
+				1AFA64F72C22080300E76352 /* SwiftUIForecastCardViewModelTests.swift */,
 			);
 			path = SwiftUIIntergrationProjectTests;
 			sourceTree = "<group>";
@@ -488,6 +539,7 @@
 				9BD0A9022BC08ADA00953018 /* UIKitController.swift in Sources */,
 				9B1FE3742BC49BAE00F0A259 /* CurrentWeatherJSONData.swift in Sources */,
 				9B7651D12BEF1C5A009CCC56 /* Double+Extensions.swift in Sources */,
+				1A0B20A52C200CEE0084692D /* CardViewModifier.swift in Sources */,
 				9B1FE3952BC5DC2800F0A259 /* ForecastJSONDataMock.swift in Sources */,
 				9B98F4742BCEDB57008B5876 /* HostControllerDelegate.swift in Sources */,
 				9B1FE36B2BC497EA00F0A259 /* Environment.swift in Sources */,
@@ -496,15 +548,20 @@
 				9B1FE3652BC0A09200F0A259 /* SampleAddresses.swift in Sources */,
 				9B1FE3862BC507C400F0A259 /* SwiftUIView.swift in Sources */,
 				9BD0A8ED2BBE1C7100953018 /* MainMenuView.swift in Sources */,
+				1A0B20A72C20161D0084692D /* ForecastCardView.swift in Sources */,
 				9BBD8CFA2BBC560F00A5F295 /* ViewController.swift in Sources */,
 				9BBD8CF62BBC560F00A5F295 /* AppDelegate.swift in Sources */,
 				9B1FE38E2BC5D63200F0A259 /* SwiftUIController.swift in Sources */,
+				1ADF866F2C20E1A700F6766C /* DismissKeyboard.swift in Sources */,
 				9B1FE3702BC4996C00F0A259 /* Functions.swift in Sources */,
 				9B1FE3932BC5DAB700F0A259 /* CurrentWeatherJSONDataMock.swift in Sources */,
+				1A0B20A92C2016420084692D /* ForecastCardViewModel.swift in Sources */,
 				9B1FE3762BC49BD000F0A259 /* WeatherDisplayData.swift in Sources */,
+				1A9682DC2C1EC23E00BF2A64 /* WeatherSummaryViewModel.swift in Sources */,
 				9BBD8CF82BBC560F00A5F295 /* SceneDelegate.swift in Sources */,
 				9B1FE3692BC0EE0500F0A259 /* ForecastJSONData.swift in Sources */,
 				9B3E41D12C0FC1C1009C0757 /* CurrentWeatherDisplayData.swift in Sources */,
+				1A9682D92C1EB4A200BF2A64 /* SearchBar.swift in Sources */,
 				9B0033422BFED3CF0057F235 /* SimpleError.swift in Sources */,
 				9B1FE3AE2BC6F4B000F0A259 /* WeatherServiceURL.swift in Sources */,
 				9B1FE3AC2BC6F49600F0A259 /* WeatherService.swift in Sources */,
@@ -519,6 +576,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				9BAA25792BC7815F00AA42B3 /* AddressServiceMock.swift in Sources */,
+				1ADF86712C20EEA000F6766C /* SwiftUIWeatherServiceTests.swift in Sources */,
+				1AFA64F62C21FAD300E76352 /* SwiftUIWeatherSummaryViewModelTests.swift in Sources */,
+				1AFA64F82C22080300E76352 /* SwiftUIForecastCardViewModelTests.swift in Sources */,
 				9B1FE3A92BC63F0300F0A259 /* EnvironmentMock.swift in Sources */,
 				9BBD8D0D2BBC561000A5F295 /* SwiftUIIntergrationProjectTests.swift in Sources */,
 				9BAA25772BC77D6B00AA42B3 /* TestObserver.swift in Sources */,
@@ -687,7 +747,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = J9VPQW634N;
+				DEVELOPMENT_TEAM = RQR7YP84KY;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SwiftUIIntergrationProject/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -715,7 +775,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = J9VPQW634N;
+				DEVELOPMENT_TEAM = RQR7YP84KY;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SwiftUIIntergrationProject/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
